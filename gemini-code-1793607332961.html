@@ -1,0 +1,1553 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IELTS Reading: Incorrect Terminology in Science - Ms Lê Hằng English</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800;900&family=Quicksand:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #8854C0;
+      --secondary: #00C9A7;
+      --accent: #FDCB6E;
+      --correct: #00D26A;
+      --wrong: #FF4757;
+      --bg-card: rgba(255, 255, 255, 0.96);
+      --text-main: #2d3436;
+      --border-radius: 18px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Nunito', 'Quicksand', sans-serif;
+    }
+
+    /* Animated Pastel + Neon Gradient Background */
+    body {
+      background: linear-gradient(-45deg, #f3e7ff, #e0fbf6, #fff6e0, #fde8f0, #e8f0fe);
+      background-size: 400% 400%;
+      animation: gradientFlow 14s ease infinite;
+      color: var(--text-main);
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      position: relative;
+    }
+
+    @keyframes gradientFlow {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Floating SVG Pattern (Stars, Flowers, Clouds, Kittens) */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.36;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 160 160'%3E%3Cg fill='none' stroke-width='2'%3E%3Cpath d='M30 20 l4 9 10 1 -7 7 2 10 -9 -5 -9 5 2 -10 -7 -7 10 -1 z' fill='%23FDCB6E'/%3E%3Ccircle cx='120' cy='35' r='8' fill='%23FF7675' opacity='0.7'/%3E%3Ccircle cx='120' cy='23' r='5' fill='%23FF9FF3'/%3E%3Ccircle cx='132' cy='35' r='5' fill='%23FF9FF3'/%3E%3Ccircle cx='120' cy='47' r='5' fill='%23FF9FF3'/%3E%3Ccircle cx='108' cy='35' r='5' fill='%23FF9FF3'/%3E%3Cpath d='M35 115 c-8 0 -14 -5 -14 -12 c0 -6 5 -11 11 -12 c3 -6 11 -9 18 -6 c6 -4 15 0 16 8 c6 2 9 8 7 14 c-2 5 -8 8 -14 8 z' fill='%2374B9FF' opacity='0.6'/%3E%3Cpath d='M110 120 l5 -10 l6 7 l10 0 l6 -7 l5 10 c2 12 -6 22 -16 22 c-10 0 -18 -10 -16 -22 z' fill='%23A29BFE' opacity='0.7'/%3E%3Ccircle cx='120' cy='128' r='2' fill='%23fff'/%3E%3Ccircle cx='132' cy='128' r='2' fill='%23fff'/%3E%3C/g%3E%3C/svg%3E");
+      animation: floatPattern 28s linear infinite;
+    }
+
+    @keyframes floatPattern {
+      from { background-position: 0 0; }
+      to { background-position: 320px 320px; }
+    }
+
+    /* Pastel Purple Highlighting */
+    ::selection {
+      background: #b794f4;
+      color: #ffffff;
+    }
+    .user-highlight {
+      background-color: #b794f4;
+      color: #ffffff;
+      padding: 1px 4px;
+      border-radius: 5px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    header {
+      position: relative;
+      z-index: 10;
+      background: rgba(255, 255, 255, 0.95);
+      border-bottom: 3px solid #e2d4f0;
+      padding: 6px 18px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      box-shadow: 0 4px 14px rgba(136, 84, 192, 0.1);
+    }
+
+    .brand-box { display: flex; flex-direction: column; }
+    .brand-title { font-size: 0.95rem; font-weight: 900; color: var(--primary); }
+    .brand-ad {
+      font-size: 0.8rem;
+      font-weight: 800;
+      color: #d63031;
+      background: #fff3cd;
+      padding: 2px 8px;
+      border-radius: 8px;
+      border: 1px solid #ffeaa7;
+    }
+
+    .control-bar {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .btn-3d {
+      border: none;
+      border-radius: 15px;
+      padding: 7px 13px;
+      font-weight: 800;
+      font-size: 0.83rem;
+      cursor: pointer;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .btn-3d:hover { transform: scale(1.04) translateY(-1px); }
+    .btn-3d:active { transform: translateY(3px); }
+
+    .btn-primary { background: var(--primary); color: #fff; box-shadow: 0 4px 0 #5f3dc4; }
+    .btn-secondary { background: var(--secondary); color: #fff; box-shadow: 0 4px 0 #00967d; }
+    .btn-accent { background: var(--accent); color: #2d3436; box-shadow: 0 4px 0 #e1a93c; }
+    .btn-danger { background: var(--wrong); color: #fff; box-shadow: 0 4px 0 #c0392b; }
+
+    .timer-badge {
+      font-size: 1.05rem;
+      font-weight: 900;
+      background: #2d3436;
+      color: #00D26A;
+      padding: 5px 14px;
+      border-radius: 14px;
+      letter-spacing: 1px;
+    }
+
+    .warning-banner {
+      position: relative;
+      z-index: 10;
+      background: linear-gradient(90deg, #fff3cd, #ffeaa7, #fff3cd);
+      border-bottom: 2px dashed #f39c12;
+      padding: 5px 18px;
+      font-size: 0.8rem;
+      color: #7f5000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .warning-banner strong { color: #d63031; font-weight: 900; }
+
+    .nav-bar {
+      position: relative;
+      z-index: 10;
+      background: #ffffff;
+      padding: 8px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid #edf2f7;
+      gap: 15px;
+    }
+    .passage-tabs { display: flex; gap: 8px; }
+    .tab-btn {
+      border: 2px solid var(--primary);
+      background: var(--primary);
+      color: #fff;
+      padding: 6px 16px;
+      border-radius: 15px;
+      font-weight: 800;
+      font-size: 0.85rem;
+      box-shadow: 0 4px 0 #5f3dc4;
+    }
+
+    .progress-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex: 1;
+      max-width: 380px;
+    }
+    .progress-track {
+      flex: 1;
+      height: 14px;
+      background: #edf2f7;
+      border-radius: 20px;
+      overflow: hidden;
+      border: 2px solid #dfe6e9;
+    }
+    .progress-fill {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, #00C9A7, #00D26A);
+      transition: width 0.3s ease;
+    }
+    .progress-label { font-size: 0.82rem; font-weight: 900; color: var(--primary); }
+
+    .split-container {
+      position: relative;
+      z-index: 5;
+      flex: 1;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      padding: 12px 16px;
+      overflow: hidden;
+    }
+
+    .pane {
+      background: var(--bg-card);
+      border-radius: var(--border-radius);
+      border: 2px solid #e2d4f0;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+      overflow-y: auto;
+      padding: 20px;
+      scroll-behavior: smooth;
+    }
+
+    .passage-header {
+      text-align: center;
+      margin-bottom: 16px;
+      padding-bottom: 10px;
+      border-bottom: 2px dashed #dfe6e9;
+    }
+    .passage-header h2 { color: var(--primary); font-size: 1.35rem; font-weight: 900; }
+
+    .para-card {
+      background: #ffffff;
+      border: 2px solid #edf2f7;
+      border-radius: 16px;
+      padding: 14px 16px;
+      margin-bottom: 14px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.03);
+    }
+    .para-label {
+      display: inline-block;
+      background: var(--primary);
+      color: #fff;
+      font-weight: 900;
+      padding: 2px 10px;
+      border-radius: 10px;
+      margin-right: 8px;
+      font-size: 0.9rem;
+    }
+    .para-text { font-size: 0.97rem; line-height: 1.72; color: #2d3436; }
+    .translate-btn {
+      margin-top: 10px;
+      background: #f3e8ff;
+      color: #6b21a8;
+      border: 1.5px solid #d8b4fe;
+      padding: 5px 12px;
+      border-radius: 12px;
+      font-size: 0.8rem;
+      font-weight: 800;
+      cursor: pointer;
+    }
+    .para-trans {
+      display: none;
+      margin-top: 10px;
+      padding: 10px 14px;
+      background: #faf5ff;
+      border-left: 4px solid var(--primary);
+      border-radius: 8px;
+      font-size: 0.9rem;
+      color: #4a5568;
+      line-height: 1.6;
+    }
+
+    .evidence-active {
+      background: #ffeaa7 !important;
+      color: #d63031 !important;
+      padding: 2px 6px;
+      border-radius: 6px;
+      font-weight: 800;
+      box-shadow: 0 0 0 3px #fdcb6e;
+      animation: pulseEv 1.2s ease infinite alternate;
+    }
+    @keyframes pulseEv {
+      from { background: #ffeaa7; }
+      to { background: #ffd32a; }
+    }
+
+    .glossary-box {
+      margin-top: 24px;
+      background: #ffffff;
+      border: 2px solid #d8b4fe;
+      border-radius: 16px;
+      padding: 16px;
+    }
+    .glossary-box h3 { color: var(--primary); margin-bottom: 12px; font-size: 1.05rem; font-weight: 900; }
+    .glossary-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+    .glossary-table th { background: var(--primary); color: #fff; padding: 8px 10px; text-align: left; }
+    .glossary-table td { padding: 7px 10px; border-bottom: 1px solid #edf2f7; }
+    .glossary-table tr:nth-child(even) { background: #faf5ff; }
+
+    .section-instruction {
+      background: linear-gradient(135deg, #f3e8ff, #e0fbf6);
+      border: 2px solid #d8b4fe;
+      padding: 12px 16px;
+      border-radius: 15px;
+      margin-bottom: 16px;
+      font-size: 0.9rem;
+      font-weight: 700;
+      line-height: 1.5;
+    }
+
+    .q-card {
+      background: #ffffff;
+      border: 2px solid #dfe6e9;
+      border-radius: 18px;
+      padding: 16px;
+      margin-bottom: 18px;
+      box-shadow: 0 5px 0 #dfe6e9;
+    }
+    .q-header { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 12px; }
+    .q-num {
+      background: var(--primary);
+      color: #fff;
+      font-weight: 900;
+      min-width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.92rem;
+      box-shadow: 0 3px 0 #5f3dc4;
+    }
+    .q-prompt { font-weight: 800; font-size: 0.96rem; line-height: 1.5; flex: 1; }
+
+    /* Multiple Choice Grid (Matches User's Image Style) */
+    .mcq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 10px; }
+    .mcq-btn {
+      background: #ffffff;
+      border: 2px solid #dfe6e9;
+      border-radius: 16px;
+      padding: 11px 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      cursor: pointer;
+      box-shadow: 0 4px 0 #dfe6e9;
+      transition: transform 0.15s, border-color 0.2s, background 0.2s;
+      text-align: left;
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+    .mcq-btn:hover:not(:disabled) { transform: scale(1.02); border-color: var(--primary); }
+    .mcq-left { display: flex; align-items: center; gap: 10px; }
+    .mcq-letter {
+      width: 30px;
+      height: 30px;
+      border-radius: 9px;
+      background: #f1f2f6;
+      color: #57606f;
+      font-weight: 900;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .badge-correct-ans {
+      display: none;
+      background: #00D26A;
+      color: #fff;
+      font-size: 0.72rem;
+      font-weight: 900;
+      padding: 3px 8px;
+      border-radius: 12px;
+      white-space: nowrap;
+    }
+
+    .mcq-btn.correct { background: #e3fcef; border-color: #00D26A; box-shadow: 0 4px 0 #00b85c; color: #006633; }
+    .mcq-btn.correct .mcq-letter { background: #00D26A; color: #fff; }
+    .mcq-btn.correct .badge-correct-ans { display: inline-block; }
+
+    .mcq-btn.wrong {
+      background: #ffeef0;
+      border-color: #FF4757;
+      box-shadow: 0 4px 0 #e03140;
+      color: #c0392b;
+      animation: shakeAnim 0.45s ease;
+    }
+    .mcq-btn.wrong .mcq-letter { background: #FF4757; color: #fff; }
+
+    @keyframes shakeAnim {
+      0%, 100% { transform: translateX(0); }
+      20%, 60% { transform: translateX(-7px); }
+      40%, 80% { transform: translateX(7px); }
+    }
+
+    .control-row { display: flex; align-items: center; gap: 10px; margin-top: 8px; flex-wrap: wrap; }
+    .select-3d {
+      padding: 9px 14px;
+      border-radius: 14px;
+      border: 2px solid #b2bec3;
+      font-weight: 800;
+      font-size: 0.9rem;
+      background: #fff;
+      box-shadow: 0 4px 0 #dfe6e9;
+      cursor: pointer;
+      min-width: 220px;
+    }
+    .select-3d.correct { background: #e3fcef; border-color: #00D26A; color: #006633; box-shadow: 0 4px 0 #00b85c; }
+    .select-3d.wrong { background: #ffeef0; border-color: #FF4757; color: #c0392b; box-shadow: 0 4px 0 #e03140; animation: shakeAnim 0.45s ease; }
+
+    .gap-input {
+      padding: 8px 14px;
+      border-radius: 12px;
+      border: 2px solid #b2bec3;
+      font-weight: 800;
+      font-size: 0.95rem;
+      width: 230px;
+    }
+    .gap-input.correct { background: #e3fcef; border-color: #00D26A; color: #006633; }
+    .gap-input.wrong { background: #ffeef0; border-color: #FF4757; color: #c0392b; animation: shakeAnim 0.45s ease; }
+
+    /* 4-Step Detailed Explanation Box (Matches User's Screenshot) */
+    .exp-container {
+      display: none;
+      margin-top: 16px;
+      border: 2px dashed #9b59b6;
+      border-radius: 18px;
+      padding: 16px;
+      background: #ffffff;
+    }
+    .exp-heading {
+      color: #e74c3c;
+      font-weight: 900;
+      font-size: 0.95rem;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+    }
+    .exp-step1 {
+      background: #fff9e6;
+      border: 1px solid #ffe8a1;
+      border-radius: 12px;
+      padding: 10px 14px;
+      font-size: 0.9rem;
+      margin-bottom: 12px;
+      line-height: 1.5;
+    }
+    .exp-step2-title { font-weight: 800; font-size: 0.88rem; margin-bottom: 8px; }
+    .exp-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 12px; }
+    .exp-opt-box {
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 8px 10px;
+      font-size: 0.84rem;
+      background: #f8fafc;
+      line-height: 1.45;
+    }
+    .opt-origin { font-weight: 900; color: #0984e3; margin-right: 4px; }
+    .tag-true { background: #d1fae5; color: #047857; font-weight: 800; font-size: 0.75rem; padding: 2px 7px; border-radius: 6px; margin-right: 5px; }
+    .tag-false { background: #fee2e2; color: #b91c1c; font-weight: 800; font-size: 0.75rem; padding: 2px 7px; border-radius: 6px; margin-right: 5px; }
+
+    .exp-step3 {
+      background: #eafaf1;
+      border: 1px solid #a9dfbf;
+      border-radius: 12px;
+      padding: 11px 14px;
+      font-size: 0.89rem;
+      color: #145a32;
+      margin-bottom: 10px;
+      line-height: 1.55;
+    }
+    .tag-grammar { background: #fef08a; color: #854d0e; padding: 2px 8px; border-radius: 6px; font-weight: 800; font-size: 0.78rem; margin: 0 5px; }
+    .exp-step4 {
+      background: #fdedec;
+      border: 1px solid #f5b7b1;
+      border-radius: 12px;
+      padding: 10px 14px;
+      font-size: 0.88rem;
+      color: #78281f;
+      line-height: 1.5;
+    }
+    .locate-btn {
+      margin-top: 8px;
+      background: #0984e3;
+      color: #fff;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 10px;
+      font-weight: 800;
+      font-size: 0.8rem;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      box-shadow: 0 3px 0 #0652DD;
+    }
+
+    #confetti-canvas { position: fixed; inset: 0; pointer-events: none; z-index: 999; }
+
+    .modal-backdrop {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.65);
+      z-index: 1000;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .modal-card {
+      background: #fff;
+      max-width: 660px;
+      width: 100%;
+      max-height: 90vh;
+      overflow-y: auto;
+      border-radius: 24px;
+      padding: 24px;
+      text-align: center;
+      border: 4px solid var(--primary);
+      box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+    }
+    .band-circle {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 14px auto;
+    }
+    .band-circle strong { font-size: 2.3rem; font-weight: 900; }
+    .teacher-feedback {
+      background: #fff9e6;
+      border: 2px dashed #f39c12;
+      padding: 14px;
+      border-radius: 14px;
+      margin: 14px 0;
+      font-weight: 700;
+      color: #7f5000;
+    }
+    .import-textarea {
+      width: 100%;
+      height: 190px;
+      border: 2px solid #cbd5e1;
+      border-radius: 12px;
+      padding: 10px;
+      font-size: 0.85rem;
+      margin-bottom: 10px;
+      resize: vertical;
+    }
+
+    @media (max-width: 960px) {
+      body { height: auto; overflow: auto; }
+      .split-container { grid-template-columns: 1fr; overflow: visible; }
+      .pane { max-height: 65vh; }
+      .mcq-grid, .exp-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<canvas id="confetti-canvas"></canvas>
+
+<header>
+  <div class="brand-box">
+    <div class="brand-title">🎓 Giáo viên tạo: Ms Lê Hằng English</div>
+    <div class="brand-ad">🔥 Đăng kí học tiếng anh 1-12, IELTS vui lòng liên hệ Ms Lê Hằng, zalo 0584 965 348.</div>
+  </div>
+
+  <div class="control-bar">
+    <button class="btn-3d btn-danger" onclick="openImportModal()">📥 Dán Văn Bản Gốc (100%)</button>
+    <div class="timer-badge" id="timer-display">20:00</div>
+    <button class="btn-3d btn-primary" id="btn-start-timer" onclick="toggleTimer()">⏱️ BẮT ĐẦU TÍNH GIỜ LÀM BÀI</button>
+    <button class="btn-3d btn-accent" onclick="resetTimer()">🔄 Đặt lại 20p</button>
+    <button class="btn-3d btn-secondary" onclick="submitExam()">🏆 NỘP BÀI & CHẤM BAND</button>
+  </div>
+</header>
+
+<div class="warning-banner">
+  <div>
+    <strong>⚠️ LỜI NHẮC CỰC KỲ QUAN TRỌNG ⚠️</strong>
+    Chỉ có đọc kỹ giải thích ngay sau mỗi câu, sau đó ghi lại từ vựng/cấu trúc mới vào vở để học thì mới thực sự giỏi lên. Làm cho xong mà không đọc giải thích hay đọc qua loa không ghi chép thì chỉ tốn thời gian vô ích! <strong>- Kéo tới đâu, làm tới đó! *</strong>
+  </div>
+  <div style="white-space:nowrap; font-weight:800; color:#6b21a8;">✨ Bôi đen bất kỳ từ nào để Highlight tím!</div>
+</div>
+
+<div class="nav-bar">
+  <div class="passage-tabs">
+    <button class="tab-btn">🔬 Reading Passage: INCORRECT TERMINOLOGY IN SCIENCE (Questions 27–40)</button>
+  </div>
+  <div class="progress-wrapper">
+    <div class="progress-track">
+      <div class="progress-fill" id="progress-fill"></div>
+    </div>
+    <div class="progress-label" id="progress-label">Đã làm: 0/14 (0%)</div>
+  </div>
+</div>
+
+<div class="split-container">
+  <div class="pane" id="left-pane"></div>
+  <div class="pane" id="right-pane"></div>
+</div>
+
+<!-- MODAL DÁN VĂN BẢN GỐC 100% & XUẤT FILE ĐỘC LẬP -->
+<div class="modal-backdrop" id="import-modal">
+  <div class="modal-card" style="text-align:left;">
+    <h3 style="color:var(--primary); font-weight:900; margin-bottom:8px;">📥 Dán 100% Văn Bản Gốc & Tự Động Gắn Dẫn Chứng</h3>
+    <p style="font-size:0.84rem; color:#4a5568; margin-bottom:12px;">
+      Dán toàn bộ 9 đoạn văn gốc (từ <strong>A.</strong> đến <strong>I.</strong>) của bài <em>INCORRECT TERMINOLOGY IN SCIENCE</em> vào ô bên dưới. Hệ thống sẽ <strong>tự động nhận diện chính xác từng câu dẫn chứng cho Q27–Q40</strong> và cho phép xuất thành file HTML độc lập chứa sẵn đề gốc!
+    </p>
+    <textarea id="raw-p1" class="import-textarea" placeholder="Dán toàn bộ văn bản gốc từ đoạn A. đến đoạn I. vào đây..."></textarea>
+
+    <div style="display:flex; gap:10px; justify-content:flex-end; flex-wrap:wrap; margin-top:8px;">
+      <button class="btn-3d btn-primary" onclick="applyVerbatimText()">✅ Lưu & Tự động gắn Highlight Dẫn chứng</button>
+      <button class="btn-3d btn-secondary" onclick="exportStandaloneHTML()">💾 Xuất File HTML Đã Lưu Đề Gốc</button>
+      <button class="btn-3d btn-accent" onclick="closeImportModal()">Đóng</button>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL KẾT QUẢ -->
+<div class="modal-backdrop" id="score-modal">
+  <div class="modal-card">
+    <h2 style="color:var(--primary); font-weight:900;">🎉 KẾT QUẢ BÀI THI IELTS READING 🎉</h2>
+    <div class="band-circle">
+      <span style="font-size:0.75rem; font-weight:800;">IELTS BAND</span>
+      <strong id="modal-band">0.0</strong>
+    </div>
+    <p style="font-size:1.05rem; font-weight:800;" id="modal-score-line"></p>
+    <p style="font-size:0.86rem; color:#4a5568; margin-top:4px;" id="modal-scaled-line"></p>
+    <div class="teacher-feedback" id="modal-feedback"></div>
+    <p style="font-size:0.85rem; color:#636e72; margin-bottom:16px;">
+      Đăng kí học tiếng anh 1-12, IELTS vui lòng liên hệ Ms Lê Hằng, zalo 0584 965 348.
+    </p>
+    <button class="btn-3d btn-primary" onclick="closeModal()">Đóng & Xem lại Giải thích chi tiết</button>
+  </div>
+</div>
+
+<script>
+/* ============================================================================
+   1. WEB AUDIO API & CONFETTI
+============================================================================ */
+const AudioCtx = window.AudioContext || window.webkitAudioContext;
+let audioCtx = null;
+
+function playSound(isCorrect) {
+  try {
+    if (!audioCtx) audioCtx = new AudioCtx();
+    const now = audioCtx.currentTime;
+    if (isCorrect) {
+      [587.33, 880, 1174.66].forEach((f, idx) => {
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(f, now + idx * 0.07);
+        gain.gain.setValueAtTime(0.18, now + idx * 0.07);
+        gain.gain.exponentialRampToValueAtTime(0.001, now + idx * 0.07 + 0.45);
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+        osc.start(now + idx * 0.07);
+        osc.stop(now + idx * 0.07 + 0.45);
+      });
+    } else {
+      [340, 290, 220].forEach((f, idx) => {
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+        osc.type = 'triangle';
+        osc.frequency.setValueAtTime(f, now + idx * 0.12);
+        gain.gain.setValueAtTime(0.2, now + idx * 0.12);
+        gain.gain.exponentialRampToValueAtTime(0.001, now + idx * 0.12 + 0.22);
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+        osc.start(now + idx * 0.12);
+        osc.stop(now + idx * 0.12 + 0.22);
+      });
+    }
+  } catch (e) {}
+}
+
+const confettiCanvas = document.getElementById('confetti-canvas');
+const cCtx = confettiCanvas.getContext('2d');
+let confettiPieces = [];
+function resizeConfetti() {
+  confettiCanvas.width = window.innerWidth;
+  confettiCanvas.height = window.innerHeight;
+}
+window.addEventListener('resize', resizeConfetti);
+resizeConfetti();
+
+function fireConfetti() {
+  const colors = ['#00D26A', '#8854C0', '#FDCB6E', '#00C9A7', '#FF7675', '#74B9FF'];
+  for (let i = 0; i < 65; i++) {
+    confettiPieces.push({
+      x: window.innerWidth / 2 + (Math.random() - 0.5) * 240,
+      y: window.innerHeight / 2,
+      vx: (Math.random() - 0.5) * 12,
+      vy: -Math.random() * 12 - 4,
+      size: Math.random() * 8 + 5,
+      color: colors[Math.floor(Math.random() * colors.length)],
+      rot: Math.random() * 360,
+      vRot: (Math.random() - 0.5) * 10
+    });
+  }
+  if (confettiPieces.length <= 65) requestAnimationFrame(updateConfetti);
+}
+
+function updateConfetti() {
+  cCtx.clearRect(0, 0, confettiCanvas.width, confettiCanvas.height);
+  confettiPieces.forEach((p) => {
+    p.x += p.vx; p.y += p.vy; p.vy += 0.35; p.rot += p.vRot;
+    cCtx.save();
+    cCtx.translate(p.x, p.y);
+    cCtx.rotate((p.rot * Math.PI) / 180);
+    cCtx.fillStyle = p.color;
+    cCtx.fillRect(-p.size / 2, -p.size / 2, p.size, p.size);
+    cCtx.restore();
+  });
+  confettiPieces = confettiPieces.filter((p) => p.y < confettiCanvas.height + 30);
+  if (confettiPieces.length > 0) requestAnimationFrame(updateConfetti);
+}
+
+function shuffleArray(arr) {
+  const copy = [...arr];
+  for (let i = copy.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [copy[i], copy[j]] = [copy[j], copy[i]];
+  }
+  return copy;
+}
+
+/* ============================================================================
+   2. AUTO-HIGHLIGHT EVIDENCE MATCHER FOR VERBATIM PASTED TEXT
+============================================================================ */
+const EVIDENCE_PATTERNS = [
+  { id: "ev-q27", regex: /(Science plays an increasingly significant role[^.]+more important than ever\.)/i },
+  { id: "ev-q28", regex: /(But many of the biggest challenges for science reporting[^.]+particular advance or development\.)/i },
+  { id: "ev-q36", regex: /(Ambiguous word choices are the source of some misunderstandings\.)/i },
+  { id: "ev-q37", regex: /(Scientists often employ colloquial terminology[^.]+without proper training\.)/i },
+  { id: "ev-q29", regex: /(The term "relativity," for example, is intrinsically misleading\.)/i },
+  { id: "ev-q38", regex: /(But it is not about intrinsic limitations[^.]+quantities simultaneously\.)/i },
+  { id: "ev-q39", regex: /(But it is not about intrinsic limitations[^.]+particular measurement)/i },
+  { id: "ev-q40", regex: /(Even Einstein took the better part of a decade[^.]+general relativity\.)/i },
+  { id: "ev-q32", regex: /(Climatologists predict more drastic fluctuations[^.]+every place will be warmer\.)/i },
+  { id: "ev-q33", regex: /(The name sometimes subverts the debate[^.]+better name\.)/i },
+  { id: "ev-q30", regex: /(Science sometimes transcends this limitation:[^.]+destroying the ozone layer indisputably\.)/i },
+  { id: "ev-q31", regex: /(One of the more amusing aspects of the discussion[^.]+gender-specific special ability\.)/i },
+  { id: "ev-q34", regex: /(For several months, Harvard was tortured[^.]+men and women\.)/i },
+  { id: "ev-q35", regex: /(The information from an unmanned space mission[^.]+people are on board\.)/i }
+];
+
+function injectEvidenceSpans(text) {
+  let processed = text;
+  EVIDENCE_PATTERNS.forEach(pat => {
+    processed = processed.replace(pat.regex, `<span id="${pat.id}">$1</span>`);
+  });
+  return processed;
+}
+
+/* ============================================================================
+   3. PASSAGE DATA (PARAGRAPHS A - I & 50 ACADEMIC GLOSSARY ITEMS)
+============================================================================ */
+let PASSAGE_DATA = {
+  title: "INCORRECT TERMINOLOGY IN SCIENCE",
+  paragraphs: [
+    {
+      label: "A",
+      text: `<span id="ev-q27">Because science plays an increasingly significant role in people's everyday lives, communicating scientific developments faithfully has become more important than ever.</span> Nevertheless, conveying such information is fraught with challenges that can easily distort public discussions, resulting in unnecessary confusion and misunderstandings.`,
+      trans: `Khoa học đóng vai trò ngày càng quan trọng trong cuộc sống của con người, khiến việc truyền đạt trung thực các phát triển khoa học trở nên quan trọng hơn bao giờ hết. Tuy nhiên, việc truyền thông như vậy chứa đựng đầy thách thức có thể dễ dàng làm sai lệch các cuộc thảo luận, dẫn đến sự nhầm lẫn và hiểu lầm không đáng có.`
+    },
+    {
+      label: "B",
+      text: `Certain difficulties arise from the esoteric nature of contemporary research and the challenge of finding sufficiently accurate terminology. Abstraction and complexity do not indicate that a scientific direction is flawed, as some commentators claim; rather, they reflect human ingenuity in tackling nature's complex challenges, even if they hinder communication. <span id="ev-q28">However, many of the biggest challenges for science reporting occur because, in fields of evolving research, scientists themselves often only partly understand the full implications of a particular advance or development.</span> Because this applies to breakthroughs directly affecting daily life—such as global warming, cancer research, and diet studies—overcoming this barrier is vital for fostering an informed public debate.`,
+      trans: `Một số vấn đề bắt nguồn từ bản chất chuyên sâu (esoteric) của nghiên cứu hiện tại và độ khó đi kèm trong việc tìm kiếm thuật ngữ đủ chính xác. Sự trừu tượng và phức tạp không phải là dấu hiệu cho thấy hướng đi khoa học bị sai như một số nhà bình luận gợi ý, mà là minh chứng cho sự tài trí của con người trước các thử thách phức tạp của tự nhiên. Tuy nhiên, nhiều thách thức lớn nhất đối với việc đưa tin khoa học phát sinh bởi vì trong các lĩnh vực nghiên cứu đang phát triển, bản thân các nhà khoa học thường chỉ hiểu một phần những hệ quả/tác động đầy đủ của bất kỳ tiến bộ hay phát triển cụ thể nào. Vì động thái này áp dụng cho hầu hết các phát triển ảnh hưởng trực tiếp đến đời sống như nóng lên toàn cầu, nghiên cứu ung thư, nghiên cứu chế độ ăn uống — học cách vượt qua nó là cực kỳ quan trọng để thúc đẩy cuộc tranh luận khoa học hiểu biết hơn trong công chúng.`
+    },
+    {
+      label: "C",
+      text: `<span id="ev-q36">Ambiguous <strong>word choices</strong> are the source of some misunderstandings.</span> <span id="ev-q37">Scientists frequently employ <strong>colloquial terminology</strong>, to which they assign a specialized technical meaning that is impossible for laypeople to fathom without proper training.</span> <span id="ev-q29">The term "relativity," for instance, is intrinsically misleading.</span> Many people assume it means everything is relative and no absolutes exist; yet while an observer's measurements depend on their reference frame, the underlying physical phenomena possess an invariant description transcending individual coordinates. Einstein's theory actually seeks an invariant description of physical phenomena, and although Einstein agreed it would have been better named "Invarianten theory," the term "relativity" was already too entrenched to alter.`,
+      trans: `Những cách chọn từ (word choices) mơ hồ là nguồn gốc của một số hiểu lầm. Các nhà khoa học thường sử dụng thuật ngữ thông tục/đời thường (colloquial terminology), thứ mà sau đó họ gán cho một ý nghĩa chuyên biệt không thể thấu hiểu nổi nếu không được đào tạo bài bản. Thuật ngữ "tương đối" (relativity) chẳng hạn, về bản chất rất dễ gây hiểu lầm. Nhiều người diễn giải lý thuyết này nghĩa là mọi thứ đều tương đối và không có gì tuyệt đối. Tuy nhiên, dù phép đo của người quan sát phụ thuộc vào hệ quy chiếu, các hiện tượng vật lý lại có một mô tả bất biến (invariant) vượt lên trên tọa độ cụ thể đó. Thuyết tương đối của Einstein thực chất là tìm kiếm mô tả bất biến cho các hiện tượng vật lý. Dù Einstein đồng ý với ý tưởng rằng lý thuyết của ông nên được đặt tên là "Lý thuyết bất biến" (Invarianten theory), nhưng thuật ngữ "tương đối" lúc đó đã bám rễ quá sâu để thay đổi.`
+    },
+    {
+      label: "D",
+      text: `"The uncertainty principle" is another frequently misused expression. <span id="ev-q38"><span id="ev-q39">Although sometimes interpreted as a restriction on observers and their capacity to make measurements, it is actually not about <strong>intrinsic</strong> limitations on any one particular <strong>measurement</strong>; rather, it concerns the inability to precisely measure specific pairs of quantities simultaneously.</span></span> While the first interpretation may seem more appealing from a philosophical or political angle, it does not reflect what the science actually states.`,
+      trans: `"Nguyên lý bất định" (The uncertainty principle) là một thuật ngữ thường xuyên bị lạm dụng khác. Đôi khi nó được diễn giải là sự giới hạn đối với người quan sát và khả năng thực hiện phép đo của họ. Nhưng thực chất nó không phải là những giới hạn nội tại/bản chất (intrinsic limitations) lên bất kỳ một phép đo (measurement) cụ thể nào; mà là việc không thể đo lường chính xác các cặp đại lượng cụ thể cùng một lúc. Cách hiểu đầu tiên có lẽ thu hút hơn từ góc độ triết học hoặc chính trị, nhưng đó không phải là bản chất của khoa học.`
+    },
+    {
+      label: "E",
+      text: `Even the word "theory" poses difficulties. Whereas the general public uses the word to mean a passing conjecture viewed with suspicion, physicists define a theory as a definite physical framework grounded in fundamental assumptions that yield specific equations and testable predictions. <span id="ev-q40">Theories are not necessarily proven complete or accurate right away—even Einstein spent most of a decade developing the correct version of his theory of <strong>general relativity</strong>.</span> Ultimately, however, ideas and measurements converge, and theories are confirmed, discarded, or integrated into broader frameworks.`,
+      trans: `Ngay cả từ "lý thuyết" (theory) cũng có thể gây rắc rối. Không giống hầu hết mọi người dùng từ này để mô tả một phỏng đoán thoáng qua đáng ngờ, các nhà vật lý có những ý niệm rất cụ thể: lý thuyết bao hàm một khung vật lý xác định thể hiện qua tập hợp các giả định cơ bản dẫn đến hệ phương trình và dự đoán cụ thể đã được kiểm chứng. Các lý thuyết không nhất thiết được chứng minh là đúng hoặc hoàn chỉnh ngay lập tức. Ngay cả Einstein cũng mất gần một thập kỷ để phát triển phiên bản đúng cho thuyết tương đối rộng (general relativity) của mình. Nhưng cuối cùng, cả ý tưởng và phép đo đều ổn định và lý thuyết hoặc được chứng minh đúng, bị loại bỏ, hoặc được hợp nhất vào các lý thuyết bao quát hơn.`
+    },
+    {
+      label: "F",
+      text: `<span id="ev-q32">"Global warming" represents another problematic phrase: climatologists forecast more extreme fluctuations in temperature and precipitation—not necessarily that every region will become warmer.</span> <span id="ev-q33">The label sometimes undermines public debate because individuals experiencing a harsh winter question how global warming can exist, showing that "global climate change" would have been a far more accurate name.</span> Yet not all communication issues stem from poor wording; many arise from the inherent complexity of modern science. <span id="ev-q30">Occasionally, science overcomes this barrier: notably, chemists detailed the exact chemical reactions behind ozone depletion, providing indisputable evidence that chlorofluorocarbon gases (such as Freon) were destroying the ozone layer.</span>`,
+      trans: `"Nóng lên toàn cầu" (Global warming) là một ví dụ khác về thuật ngữ có vấn đề. Các nhà khí hậu học dự đoán những biến động mạnh mẽ hơn về nhiệt độ và lượng mưa — chứ không nhất thiết là mọi nơi đều sẽ ấm lên. Cái tên này đôi khi làm chệch hướng cuộc tranh luận, vì nó khiến mọi người cãi rằng mùa đông của họ khắc nghiệt hơn thì làm sao có nóng lên toàn cầu được? Rõ ràng "biến đổi khí hậu toàn cầu" sẽ là một cái tên tốt hơn. Nhưng không phải mọi vấn đề đều chỉ bắt nguồn từ cách chọn từ kém; một số bắt nguồn từ bản chất phức tạp của khoa học hiện đại. Đôi khi khoa học vượt qua được rào cản này: đáng chú ý là các nhà hóa học đã chỉ ra chi tiết các quá trình hóa học chính xác liên quan đến sự phá hủy tầng ozone, khiến bằng chứng về việc khí CFC (ví dụ như Freon) phá hủy tầng ozone trở nên không thể chối cãi.`
+    },
+    {
+      label: "G",
+      text: `Clarifying scientific debates requires a stronger grasp of the mathematical significance of findings and less demand for oversimplified narratives. <span id="ev-q34">For months, Harvard was embroiled in hollow debates over the relative intrinsic scientific abilities of men and women.</span> <span id="ev-q31">Amusingly, both those who believed in gender differences and those who did not cited the exact same evidence regarding gender-specific spatial ability.</span> Why? Because the data actually reveals no substantial effects; minor variations may stem from social factors with no clear link to scientific capability. To improve public understanding across all sciences, the first step is fostering greater acceptance of indirect scientific evidence. <span id="ev-q35">Data gathered by an unmanned space probe is every bit as legitimate as data collected by a crewed mission.</span>`,
+      trans: ` sự hiểu biết tốt hơn về ý nghĩa toán học của các kết quả và bớt khăng khăng đòi hỏi một câu chuyện đơn giản sẽ giúp làm sáng tỏ nhiều cuộc thảo luận khoa học. Trong vài tháng, Đại học Harvard đã bị tra tấn bởi những cuộc tranh cãi vô bổ về năng lực khoa học bẩm sinh tương đối giữa nam và nữ. Một trong những khía cạnh hài hước/đáng ngạc nhiên của cuộc thảo luận là cả những người tin vào sự khác biệt lẫn những người không tin đều sử dụng cùng một bằng chứng về năng lực chuyên biệt theo giới tính. Tại sao vậy? Câu trả lời là dữ liệu cho thấy không có tác động đáng kể nào. Để cải thiện sự hiểu biết của công chúng, bước đầu tiên là gieo rắc sự thấu hiểu và chấp nhận lớn hơn đối với bằng chứng khoa học gián tiếp. Thông tin từ một tàu vũ trụ không người lái hoàn toàn có giá trị hợp pháp ngang bằng với thông tin từ tàu có con người trên đó.`
+    },
+    {
+      label: "H",
+      text: `Accepting indirect evidence does not mean never questioning interpretations, nor does it mean equating indirect data with blind faith. Second, science with urgent policy implications may require different evaluation standards than purely theoretical research. When researchers express uncertainty about predictions, it does not mean they have found nothing substantial. Greater transparency from scientists regarding mathematical significance—combined with less public fear of mathematics, statistics, and margins of error—provides the tools needed to evaluate new developments fairly.`,
+      trans: `Điều này không có nghĩa là không bao giờ đặt câu hỏi về một cách diễn giải, nhưng cũng không có nghĩa là đánh đồng bằng chứng gián tiếp với niềm tin mù quáng. Thứ hai, chúng ta có thể cần các tiêu chuẩn khác nhau để đánh giá khoa học có hàm ý chính sách khẩn cấp so với nghiên cứu thuần túy lý thuyết. Khi các nhà khoa học nói họ không chắc chắn về dự đoán của mình, điều đó không nhất thiết có nghĩa là họ chẳng tìm thấy điều gì quan trọng. Sẽ tốt hơn nếu các nhà khoa học cởi mở hơn về ý nghĩa toán học của kết quả và công chúng bớt coi toán học là thứ đáng sợ. Thống kê và sai số cho chúng ta công cụ để đánh giá công bằng các phát triển mới.`
+    },
+    {
+      label: "I",
+      text: `Above all, the public must recognize that science is inherently complex; demanding only simple stories inevitably distorts descriptions. When breakthroughs are subtle or intricate, scientists must be willing to go the extra distance to provide clear explanations and remain patient about the truth. Even then, some difficulties cannot be avoided because most scientific developments represent work in progress, where no one yet sees the entire picture.`,
+      trans: `Nhưng quan trọng nhất, mọi người phải nhận ra rằng khoa học có thể rất phức tạp. Nếu chúng ta chỉ chấp nhận những câu chuyện đơn giản, mô tả tất yếu sẽ bị bóp méo. Khi những tiến bộ mang tính tinh vi hoặc phức tạp, các nhà khoa học nên sẵn lòng nỗ lực thêm (go the extra distance) để đưa ra lời giải thích thỏa đáng và kiên nhẫn với sự thật. Dù vậy, một số khó khăn là không thể tránh khỏi vì hầu hết các phát triển đều phản ánh công việc đang trong quá trình hoàn thiện, nên chưa ai biết được bức tranh toàn cảnh.`
+    }
+  ],
+  glossary: [
+    ["faithful", "adj", "trung thực, chuẩn xác ~ accurate / true"],
+    ["fraught with", "adj.phr", "đầy rẫy những (khó khăn, rủi ro) ~ filled with"],
+    ["distort", "v", "bóp méo, làm sai lệch ~ twist / misrepresent"],
+    ["stem from", "v.phr", "bắt nguồn từ ~ arise from / originate in"],
+    ["esoteric", "adj", "chuyên sâu, khó hiểu với người ngoài ngành ~ abstruse / specialized"],
+    ["abstraction", "n", "sự trừu tượng ~ theoretical concept"],
+    ["commentator", "n", "nhà bình luận ~ critic / observer"],
+    ["tribute", "n", "minh chứng tôn vinh, lời ca ngợi ~ testament"],
+    ["ingenuity", "n", "sự tài trí, khéo léo sáng tạo ~ inventiveness"],
+    ["evolving", "adj", "đang tiến triển, đang phát triển ~ developing"],
+    ["implication", "n", "hệ quả, tác động sâu xa ~ impact / consequence"],
+    ["spur", "v", "thúc đẩy, kích thích ~ stimulate / encourage"],
+    ["ambiguous", "adj", "mơ hồ, nhập nhằng nhiều nghĩa ~ vague / unclear"],
+    ["colloquial", "adj", "thông tục, đời thường ~ informal / everyday"],
+    ["terminology", "n", "thuật ngữ chuyên môn ~ nomenclature / vocabulary"],
+    ["fathom", "v", "thấu hiểu sâu sắc ~ comprehend / understand deeply"],
+    ["intrinsically", "adv", "về bản chất, nội tại ~ inherently / fundamentally"],
+    ["misleading", "adj", "gây hiểu lầm, đánh lạc hướng ~ deceptive"],
+    ["coordinates", "n", "tọa độ ~ position parameters"],
+    ["reference frame", "n.phr", "hệ quy chiếu ~ observational perspective"],
+    ["phenomena", "n (pl)", "các hiện tượng ~ occurrences / events"],
+    ["invariant", "adj", "bất biến, không thay đổi ~ unchanging / constant"],
+    ["transcend", "v", "vượt lên trên, vượt qua ~ go beyond / overcome"],
+    ["entrenched", "adj", "bám rễ sâu, ăn sâu ~ firmly established"],
+    ["abused", "adj", "bị lạm dụng, dùng sai ~ misused"],
+    ["intrinsic", "adj", "nội tại, thuộc về bản chất ~ inherent / innate"],
+    ["simultaneously", "adv", "đồng thời, cùng một lúc ~ at the same time"],
+    ["conjecture", "n", "sự phỏng đoán không căn cứ ~ guess / speculation"],
+    ["suspect", "adj", "đáng ngờ, không đáng tin ~ doubtful / questionable"],
+    ["entail", "v", "bao hàm, kéo theo ~ involve / require"],
+    ["embody", "v", "hiện thân, thể hiện rõ trong ~ incorporate / represent"],
+    ["borne out", "v.phr", "được chứng thực, khẳng định ~ confirmed / supported"],
+    ["encompassing", "adj", "bao quát, toàn diện ~ comprehensive"],
+    ["drastic", "adj", "mạnh mẽ, quyết liệt, khắc nghiệt ~ extreme / severe"],
+    ["fluctuation", "n", "sự biến động, dao động ~ variation / swing"],
+    ["subvert", "v", "làm suy yếu, làm chệch hướng ~ undermine / disrupt"],
+    ["indisputably", "adv", "không thể chối cãi ~ undeniably / unquestionably"],
+    ["tortured", "v/adj", "bị hành hạ, giằng xé (bởi tranh cãi) ~ plagued / troubled"],
+    ["substantial", "adj", "đáng kể, có giá trị thực chất ~ significant / meaningful"],
+    ["inculcate", "v", "gieo rắc, khắc sâu vào tâm trí ~ instill / teach"],
+    ["legitimate", "adj", "hợp lý, chính đáng, có giá trị ~ valid / reliable"],
+    ["unmanned", "adj", "không người lái ~ automated / robotic"],
+    ["equate", "v", "đánh đồng, coi là ngang nhau ~ consider equal"],
+    ["urgent", "adj", "khẩn cấp, cấp bách ~ pressing / immediate"],
+    ["transparency", "n", "sự minh bạch, cởi mở ~ openness"],
+    ["subtle", "adj", "tinh vi, khó nhận biết ~ delicate / nuanced"],
+    ["go the extra distance", "idiom", "nỗ lực hết mình, cố gắng thêm ~ make extra effort"],
+    ["unavoidable", "adj", "không thể tránh khỏi ~ inevitable"],
+    ["work in progress", "n.phr", "công việc đang trong quá trình hoàn thiện ~ unfinished research"],
+    ["comprehend", "v", "hiểu rõ, lĩnh hội ~ understand / grasp"]
+  ]
+};
+
+/* ============================================================================
+   4. QUESTIONS 27–40 WITH 4-STEP DETAILED EXPLANATIONS & EVIDENCE LINKS
+============================================================================ */
+const QUESTIONS = [
+  {
+    id: 27, type: "mcq",
+    sectionTitle: "Questions 27–31: Choose the correct answer A, B, C, or D.",
+    prompt: "27. Why is the faithful communication of science important?",
+    answer: "A",
+    options: [
+      { letter: "A", text: "Science plays an increasingly significant role in people's lives." },
+      { letter: "B", text: "Science is fraught with challenges the public are interested in." },
+      { letter: "C", text: "The nature of complexity in science communication leads to confusion." },
+      { letter: "D", text: "Scientific inventions are more important than ever before." }
+    ],
+    step1: "Tại sao việc truyền đạt trung thực về khoa học lại quan trọng?",
+    step2: [
+      { label: "Gốc A", ok: true, text: "Science plays an increasingly significant role in people's lives: Khoa học đóng vai trò ngày càng quan trọng trong đời sống con người." },
+      { label: "Gốc B", ok: false, text: "Science is fraught with challenges the public are interested in: Truyền thông khoa học đầy thách thức chứ không phải 'thách thức mà công chúng quan tâm'." },
+      { label: "Gốc C", ok: false, text: "The nature of complexity in science communication leads to confusion: Đây là hệ quả của việc truyền thông khó khăn, không phải lý do tại sao truyền thông trung thực lại quan trọng." },
+      { label: "Gốc D", ok: false, text: "Scientific inventions are more important than ever before: Bẫy đánh tráo chủ ngữ ('communication of scientific developments' bị đổi thành 'scientific inventions')." }
+    ],
+    step3: "Câu đầu tiên của Đoạn A nêu trực tiếp mối quan hệ nhân – quả: 'Science plays an increasingly significant role in people's lives, making the faithful communication of scientific developments more important than ever.' (Chính vì khoa học đóng vai trò ngày càng lớn trong đời sống nên việc truyền đạt trung thực mới trở nên quan trọng hơn bao giờ hết).",
+    step4: "Loại B và C vì đó là những rào cản/hệ quả ở câu thứ hai; loại D vì bài nói việc 'truyền thông các phát triển khoa học' quan trọng hơn bao giờ hết chứ không nói 'các phát minh khoa học'.",
+    evidenceId: "ev-q27", para: "Đoạn A"
+  },
+  {
+    id: 28, type: "mcq",
+    prompt: "28. What is the reason for many of the biggest challenges in science reporting?",
+    answer: "C",
+    options: [
+      { letter: "A", text: "Phenomenon such as global warming, cancer research, diet studies are too complex" },
+      { letter: "B", text: "Scientists themselves often only partly understand the Theory of Evolution" },
+      { letter: "C", text: "Scientists do not totally comprehend the impact of certain scientific advancements" },
+      { letter: "D", text: "Scientists themselves often partly understand the esoteric communication nature" }
+    ],
+    step1: "Nguyên nhân dẫn đến nhiều thách thức lớn nhất trong việc đưa tin khoa học (science reporting) là gì?",
+    step2: [
+      { label: "Gốc A", ok: false, text: "Phenomenon such as global warming... are too complex: Đây chỉ là các ví dụ về lĩnh vực ảnh hưởng đến đời sống được nêu ở câu sau." },
+      { label: "Gốc B", ok: false, text: "Scientists... partly understand the Theory of Evolution: Bẫy từ vựng cực mạnh! 'evolving research' (nghiên cứu đang phát triển) bị bóp méo thành 'Theory of Evolution' (Thuyết tiến hóa)." },
+      { label: "Gốc C", ok: true, text: "Scientists do not totally comprehend the impact of certain scientific advancements: Các nhà khoa học không hiểu hoàn toàn tác động/hệ quả của một số tiến bộ khoa học." },
+      { label: "Gốc D", ok: false, text: "Scientists... partly understand the esoteric communication nature: Các nhà khoa học hiểu một phần 'full implications of any particular advance', không phải hiểu một phần bản chất truyền thông." }
+    ],
+    step3: "Đoạn B chỉ rõ: 'But many of the biggest challenges for science reporting arise because in areas of evolving research, scientists themselves often only partly understand the full implications of any particular advance or development.' Các cụm từ đồng nghĩa: only partly understand ~ do not totally comprehend; the full implications ~ the impact; any particular advance or development ~ certain scientific advancements.",
+    step4: "Loại B (bẫy dịch sai 'evolving research' thành 'Theory of Evolution'); loại A và D vì ghép sai cấu trúc câu trong đoạn B.",
+    evidenceId: "ev-q28", para: "Đoạn B"
+  },
+  {
+    id: 29, type: "mcq",
+    prompt: "29. According to the 3rd paragraph, the reference to the term and example of \"theory of relativity\" is to demonstrate",
+    answer: "B",
+    options: [
+      { letter: "A", text: "Theory of relativity is about an invariant physical phenomenon" },
+      { letter: "B", text: "Scientific terms can sometimes cause misunderstandings" },
+      { letter: "C", text: "The term \"relativity,\" is designed to be misleading public" },
+      { letter: "D", text: "Everything is relative and there is no absolute existence" }
+    ],
+    step1: "Theo đoạn văn thứ 3 (Đoạn C), việc nhắc đến thuật ngữ và ví dụ về 'thuyết tương đối' nhằm mục đích chứng minh điều gì?",
+    step2: [
+      { label: "Gốc A", ok: false, text: "Theory of relativity is about an invariant physical phenomenon: Đây chỉ là chi tiết giải thích nội dung vật lý của thuyết tương đối, không phải luận điểm chính mà ví dụ này minh họa." },
+      { label: "Gốc B", ok: true, text: "Scientific terms can sometimes cause misunderstandings: Các thuật ngữ khoa học đôi khi có thể gây ra sự hiểu lầm (~ Ambiguous word choices are the source of some misunderstandings)." },
+      { label: "Gốc C", ok: false, text: "The term 'relativity' is designed to be misleading public: Sai vì nó vô tình gây hiểu lầm ('intrinsically misleading') chứ không phải được thiết kế có chủ đích ('designed to') để đánh lừa công chúng." },
+      { label: "Gốc D", ok: false, text: "Everything is relative and there is no absolute existence: Đây là cách hiểu sai lầm của công chúng, bị tác giả bác bỏ ngay sau đó." }
+    ],
+    step3: "Đoạn C mở đầu bằng câu chủ đề (Topic Sentence): 'Ambiguous word choices are the source of some misunderstandings. Scientists often employ colloquial terminology... The term \"relativity,\" for example, is intrinsically misleading.' Cụm 'for example' chứng tỏ ví dụ về 'relativity' được đưa ra nhằm chứng minh cho luận điểm: thuật ngữ khoa học/cách chọn từ mơ hồ có thể gây hiểu lầm cho công chúng (Đáp án B).",
+    step4: "Loại A (chi tiết phụ); loại C (sai ở từ 'designed to'); loại D (quan niệm sai lầm của đám đông).",
+    evidenceId: "ev-q29", para: "Đoạn C"
+  },
+  {
+    id: 30, type: "mcq",
+    prompt: "30. Which one is a good example of an area where scientists used appropriate terminology",
+    answer: "D",
+    options: [
+      { letter: "A", text: "The uncertainty principle" },
+      { letter: "B", text: "Global warming" },
+      { letter: "C", text: "The theory of relativity" },
+      { letter: "D", text: "Freon's destructive process on Ozone" }
+    ],
+    step1: "Đâu là một ví dụ điển hình về lĩnh vực mà các nhà khoa học đã sử dụng thuật ngữ/cách diễn đạt phù hợp, rõ ràng?",
+    step2: [
+      { label: "Gốc A", ok: false, text: "The uncertainty principle: Thuật ngữ bị lạm dụng và hiểu sai (Đoạn D: 'another frequently abused term')." },
+      { label: "Gốc B", ok: false, text: "Global warming: Thuật ngữ có vấn đề (Đoạn F: 'another example of problematic terminology')." },
+      { label: "Gốc C", ok: false, text: "The theory of relativity: Thuật ngữ gây hiểu lầm (Đoạn C: 'intrinsically misleading')." },
+      { label: "Gốc D", ok: true, text: "Freon's destructive process on Ozone: Quá trình khí Freon phá hủy tầng Ozone (Đoạn F: vượt qua được hạn chế truyền thông, bằng chứng rõ ràng không thể chối cãi)." }
+    ],
+    step3: "Cuối Đoạn F nêu rõ trường hợp ngoại lệ tích cực khi khoa học vượt qua được rào cản ngôn ngữ và sự phức tạp: 'Science sometimes transcends this limitation: remarkably, chemists were able to detail the precise chemical processes involved in the destruction of the ozone layer, making the evidence that chlorofluorocarbon gases (Freon, for example) were destroying the ozone layer indisputably.'",
+    step4: "Loại A, B, C vì cả 3 đều là ví dụ tiêu cực về các thuật ngữ gây hiểu lầm được liệt kê xuyên suốt bài.",
+    evidenceId: "ev-q30", para: "Đoạn F"
+  },
+  {
+    id: 31, type: "mcq",
+    prompt: "31. What is a surprising finding of the Harvard debates in the passage?",
+    answer: "B",
+    options: [
+      { letter: "A", text: "There are equal intrinsic scientific abilities of men and women." },
+      { letter: "B", text: "Both sides used the same data in support of their argument." },
+      { letter: "C", text: "The scientific data usually shows no substantial figures to support a debated idea." },
+      { letter: "D", text: "Social factors might have a clear connection to scientific ability." }
+    ],
+    step1: "Phát hiện đáng ngạc nhiên/kỳ lạ từ các cuộc tranh luận tại Đại học Harvard trong bài đọc là gì?",
+    step2: [
+      { label: "Gốc A", ok: false, text: "There are equal intrinsic scientific abilities of men and women: Bài chỉ nói dữ liệu không cho thấy sự khác biệt đáng kể, và đây không phải là khía cạnh gây ngạc nhiên ('amusing aspect') được nhấn mạnh." },
+      { label: "Gốc B", ok: true, text: "Both sides used the same data in support of their argument: Cả hai phe đối lập đều sử dụng cùng một dữ liệu/bằng chứng để bảo vệ lập luận của mình." },
+      { label: "Gốc C", ok: false, text: "The scientific data usually shows no substantial figures...: Khái quát hóa sai ('usually') cho mọi cuộc tranh luận." },
+      { label: "Gốc D", ok: false, text: "Social factors might have a clear connection...: Trái ngược hoàn toàn với bài đọc (Đoạn G ghi: 'unclear connection to scientific ability')." }
+    ],
+    step3: "Đoạn G viết: 'One of the more amusing aspects of the discussion was that those who believed in the differences and those who didn't used the same evidence about gender-specific special ability.' Cụm 'those who believed... and those who didn't' = 'Both sides'; 'used the same evidence' = 'used the same data in support of their argument'.",
+    step4: "Loại D vì trái ngược ('unclear' vs 'clear'); loại A và C vì không khớp với câu nói về 'One of the more amusing aspects'.",
+    evidenceId: "ev-q31", para: "Đoạn G"
+  },
+  {
+    id: 32, type: "tfng",
+    sectionTitle: "Questions 32–35: Choose YES if the statement agrees with the claims of the writer, NO if it contradicts, or NOT GIVEN if it is impossible to say.",
+    prompt: "32. \"Global warming\" scientifically refers to greater fluctuations in temperature and rainfall rather than a universal temperature rise.",
+    answer: "YES",
+    options: ["YES", "NO", "NOT GIVEN"],
+    step1: "Về mặt khoa học, 'nóng lên toàn cầu' đề cập đến những biến động lớn hơn về nhiệt độ và lượng mưa hơn là sự tăng nhiệt độ đồng loạt ở mọi nơi.",
+    step2: [
+      { label: "YES", ok: true, text: "Đúng — Hoàn toàn đồng nhất với lời giải thích của các nhà khí hậu học ở Đoạn F." },
+      { label: "NO", ok: false, text: "Sai — Không mâu thuẫn với quan điểm tác giả." },
+      { label: "NOT GIVEN", ok: false, text: "Thông tin được nêu trực tiếp ở câu 1–2 của Đoạn F." }
+    ],
+    step3: "Đoạn F viết: 'Climatologists predict more drastic fluctuations in temperature and rainfall — not necessarily that every place will be warmer.' Cụm 'more drastic fluctuations in temperature and rainfall' = 'greater fluctuations in temperature and rainfall'; 'not necessarily that every place will be warmer' = 'rather than a universal temperature rise'.",
+    step4: "Chọn YES vì toàn bộ hai vế so sánh đều khớp hoàn toàn với câu văn trong Đoạn F.",
+    evidenceId: "ev-q32", para: "Đoạn F"
+  },
+  {
+    id: 33, type: "tfng",
+    prompt: "33. More media coverage of \"global warming\" would help the public to recognize the phenomenon.",
+    answer: "NOT GIVEN",
+    options: ["YES", "NO", "NOT GIVEN"],
+    step1: "Việc truyền thông đưa tin nhiều hơn về 'nóng lên toàn cầu' sẽ giúp công chúng nhận diện đúng hiện tượng này.",
+    step2: [
+      { label: "YES", ok: false, text: "Tác giả không hề đề xuất tăng thời lượng đưa tin trên truyền thông cho thuật ngữ này." },
+      { label: "NO", ok: false, text: "Bài không bàn luận về số lượng/tần suất phủ sóng truyền thông (more media coverage)." },
+      { label: "NOT GIVEN", ok: true, text: "Đúng — Tác giả chỉ nói đổi tên thành 'global climate change' sẽ tốt hơn, hoàn toàn không đề cập việc tăng mức độ phủ sóng truyền thông (media coverage) có giúp ích hay không." }
+    ],
+    step3: "Trong Đoạn F, tác giả chỉ phê phán bản thân cái tên 'global warming' làm chệch hướng tranh luận và nhận định: 'Clearly \"global climate change\" would have been a better name.' Bài viết hoàn toàn không nhắc đến việc tăng mức độ đưa tin của truyền thông ('more media coverage').",
+    step4: "Chọn NOT GIVEN vì khái niệm 'More media coverage' không xuất hiện trong văn bản.",
+    evidenceId: "ev-q33", para: "Đoạn F"
+  },
+  {
+    id: 34, type: "tfng",
+    prompt: "34. Harvard debates should focus more on female scientists than male scientists.",
+    answer: "NOT GIVEN",
+    options: ["YES", "NO", "NOT GIVEN"],
+    step1: "Các cuộc tranh luận ở Harvard nên tập trung nhiều hơn vào các nhà khoa học nữ hơn là các nhà khoa học nam.",
+    step2: [
+      { label: "YES", ok: false, text: "Không có lời khuyên nào như vậy trong bài." },
+      { label: "NO", ok: false, text: "Tác giả không so sánh cần tập trung vào giới nào nhiều hơn." },
+      { label: "NOT GIVEN", ok: true, text: "Đúng — Đoạn G chỉ nói Harvard tranh cãi về năng lực bẩm sinh giữa nam và nữ, hoàn toàn không nói cuộc tranh luận nên tập trung vào nữ nhiều hơn nam." }
+    ],
+    step3: "Đoạn G viết: 'For several months, Harvard was tortured by empty debates over the relative intrinsic scientific abilities of men and women.' Tác giả gọi đây là những cuộc tranh cãi trống rỗng ('empty debates') vì dữ liệu không cho thấy sự khác biệt đáng kể, chứ hoàn toàn không khuyên nên tập trung vào nhà khoa học nữ nhiều hơn nam.",
+    step4: "Chọn NOT GIVEN vì sự so sánh 'focus more on female scientists than male scientists' không tồn tại trong bài.",
+    evidenceId: "ev-q34", para: "Đoạn G"
+  },
+  {
+    id: 35, type: "tfng",
+    prompt: "35. Indirect scientific evidence is always less reliable than direct scientific evidence.",
+    answer: "NO",
+    options: ["YES", "NO", "NOT GIVEN"],
+    step1: "Bằng chứng khoa học gián tiếp luôn kém tin cậy hơn bằng chứng khoa học trực tiếp.",
+    step2: [
+      { label: "YES", ok: false, text: "Ngược lại hoàn toàn với khẳng định của tác giả ở cuối Đoạn G." },
+      { label: "NO", ok: true, text: "Đúng — Tác giả khẳng định bằng chứng gián tiếp (như tàu vũ trụ không người lái) có giá trị hợp pháp/đáng tin cậy KHÔNG KÉM GÌ ('no less legitimate than') bằng chứng trực tiếp có con người." },
+      { label: "NOT GIVEN", ok: false, text: "Có thông tin đối lập trực tiếp ở cuối Đoạn G." }
+    ],
+    step3: "Hai câu cuối Đoạn G nêu rõ: 'The first would be to inculcate greater understanding and acceptance of indirect scientific evidence. The information from an unmanned space mission is no less legitimate than the information from one in which people are on board.' Cụm 'no less legitimate than' (không hề kém hợp pháp/đáng tin cậy hơn) bác bỏ hoàn toàn nhận định 'always less reliable than'.",
+    step4: "Vì câu hỏi mâu thuẫn trực tiếp với quan điểm của tác giả nên đáp án chuẩn là NO.",
+    evidenceId: "ev-q35", para: "Đoạn G"
+  },
+  {
+    id: 36, type: "gap",
+    sectionTitle: "Questions 36–40: Complete the summary below. Write NO MORE THAN TWO WORDS from the Reading Passage for each answer.",
+    prompt: "Science Communication is fraught with challenges that can easily distort discussions, leading to unnecessary confusion and misunderstandings. Firstly, ambiguous 36 .................... are the source of some misunderstandings.",
+    answer: "word choices",
+    step1: "Trước hết, những [cách lựa chọn từ ngữ] mơ hồ là nguồn gốc của một số sự hiểu lầm.",
+    step2: [
+      { label: "Từ cần điền", ok: true, text: "word choices (n.phr - 2 từ): sự lựa chọn từ ngữ (đóng vai trò chủ ngữ số nhiều đi với động từ 'are')." },
+      { label: "Cấu trúc khớp", ok: false, text: "Ambiguous [word choices] are the source of some misunderstandings." }
+    ],
+    step3: "Câu đầu tiên của Đoạn C viết nguyên văn: 'Ambiguous word choices are the source of some misunderstandings.' Do đó cụm danh từ số nhiều gồm 2 từ cần điền là 'word choices'.",
+    step4: "Lưu ý phải có 's' ở từ 'choices' để hòa hợp với động từ 'are' phía sau.",
+    evidenceId: "ev-q36", para: "Đoạn C"
+  },
+  {
+    id: 37, type: "gap",
+    prompt: "Common people without proper training do not understand clearly or deeply a specific scientific meaning via the 37 .................... that scientists often employ.",
+    answer: "colloquial terminology",
+    step1: "Những người bình thường không được đào tạo bài bản sẽ không hiểu rõ hoặc sâu sắc ý nghĩa khoa học cụ thể thông qua [thuật ngữ thông tục/đời thường] mà các nhà khoa học thường sử dụng.",
+    step2: [
+      { label: "Từ cần điền", ok: true, text: "colloquial terminology (n.phr - 2 từ): thuật ngữ thông tục / ngôn từ đời thường." },
+      { label: "Từ đồng nghĩa", ok: false, text: "understand clearly or deeply ~ fathom; that scientists often employ ~ Scientists often employ colloquial terminology." }
+    ],
+    step3: "Câu thứ hai của Đoạn C viết: 'Scientists often employ colloquial terminology, which they then assign a specific meaning that is impossible to fathom without proper training.' Đứng sau mạo từ 'the' và trước mệnh đề quan hệ 'that scientists often employ' chính là cụm 2 từ 'colloquial terminology'.",
+    step4: "Chấp nhận 'colloquial terminology' (hoặc 'terminology').",
+    evidenceId: "ev-q37", para: "Đoạn C"
+  },
+  {
+    id: 38, type: "gap",
+    prompt: "For example, uncertainty is not about 38 .................... limitations on any particular...",
+    answer: "intrinsic",
+    step1: "Ví dụ, nguyên lý bất định không phải là về những giới hạn [nội tại/bản chất] đối với bất kỳ...",
+    step2: [
+      { label: "Từ cần điền", ok: true, text: "intrinsic (adj - 1 từ): nội tại, thuộc về bản chất (đứng trước danh từ 'limitations')." },
+      { label: "Cấu trúc khớp", ok: false, text: "it is not about [intrinsic] limitations on any one particular..." }
+    ],
+    step3: "Câu thứ ba của Đoạn D viết nguyên văn: 'But it is not about intrinsic limitations on any one particular measurement; it is about the inability to precisely measure particular pairs of quantities simultaneously.' Do đó tính từ đứng trước 'limitations' là 'intrinsic'.",
+    step4: "Chỉ điền 'intrinsic' vì từ 'limitations' đã có sẵn ngay sau ô trống 38.",
+    evidenceId: "ev-q38", para: "Đoạn D"
+  },
+  {
+    id: 39, type: "gap",
+    prompt: "...limitations on any particular 39 .................... .",
+    answer: "measurement",
+    step1: "...những giới hạn nội tại đối với bất kỳ [phép đo] cụ thể nào.",
+    step2: [
+      { label: "Từ cần điền", ok: true, text: "measurement (n - 1 từ): phép đo / sự đo lường (đứng sau 'any particular')." },
+      { label: "Cấu trúc khớp", ok: false, text: "...limitations on any one particular [measurement]." }
+    ],
+    step3: "Từ cùng câu dẫn chứng ở Đoạn D: 'But it is not about intrinsic limitations on any one particular measurement...' Từ cần điền ngay sau 'any particular' là danh từ số ít 'measurement'.",
+    step4: "Lưu ý điền danh từ số ít 'measurement' đúng nguyên văn trong đoạn D.",
+    evidenceId: "ev-q39", para: "Đoạn D"
+  },
+  {
+    id: 40, type: "gap",
+    prompt: "What's more, even the word \"theory\" can be a problem. Theories aren't necessarily shown to be correct or complete immediately since scientists often evolved better versions of specific theories, a good example can be the theory of 40 .................... .",
+    answer: "general relativity",
+    step1: "Hơn nữa, ngay cả từ 'lý thuyết' cũng có thể là một vấn đề. Các lý thuyết không nhất thiết được chứng minh là đúng hoặc hoàn chỉnh ngay lập tức vì các nhà khoa học thường phát triển các phiên bản tốt hơn của các lý thuyết cụ thể, một ví dụ điển hình là thuyết [tương đối rộng].",
+    step2: [
+      { label: "Từ cần điền", ok: true, text: "general relativity (n.phr - 2 từ): thuyết tương đối rộng (hoặc 'relativity')." },
+      { label: "Từ đồng nghĩa", ok: false, text: "evolved better versions ~ develop the correct version of his theory of general relativity." }
+    ],
+    step3: "Đoạn E viết: 'Theories aren't necessarily shown to be correct or complete immediately. Even Einstein took the better part of a decade to develop the correct version of his theory of general relativity.' Đứng sau cụm 'the theory of' là tối đa 2 từ: 'general relativity'.",
+    step4: "Hệ thống chấp nhận cả 'general relativity' (chuẩn 2 từ trong đoạn E) và 'relativity'.",
+    evidenceId: "ev-q40", para: "Đoạn E"
+  }
+];
+
+/* ============================================================================
+   5. RENDER & INTERACTION LOGIC
+============================================================================ */
+const userAnswers = {};
+const shuffledMcqCache = {};
+
+QUESTIONS.forEach((q) => {
+  if (q.type === "mcq") {
+    shuffledMcqCache[q.id] = shuffleArray(q.options);
+  }
+});
+
+// Load saved verbatim text from localStorage if previously pasted
+try {
+  const savedVerbatim = localStorage.getItem('ms_le_hang_incorrect_terminology_verbatim');
+  if (savedVerbatim) {
+    const parsed = JSON.parse(savedVerbatim);
+    if (Array.isArray(parsed) && parsed.length) {
+      parsed.forEach((txt, idx) => {
+        if (PASSAGE_DATA.paragraphs[idx]) {
+          PASSAGE_DATA.paragraphs[idx].text = txt;
+        }
+      });
+    }
+  }
+} catch (e) {}
+
+function openImportModal() {
+  document.getElementById('import-modal').style.display = 'flex';
+}
+function closeImportModal() {
+  document.getElementById('import-modal').style.display = 'none';
+}
+
+function applyVerbatimText() {
+  const raw = document.getElementById('raw-p1').value.trim();
+  if (!raw) return;
+
+  const blocks = raw.split(/\n\s*\n|\n(?=[A-I]\.\s|\b[A-I]\s)/).map(s => s.trim()).filter(Boolean);
+  blocks.forEach((blk, idx) => {
+    if (PASSAGE_DATA.paragraphs[idx]) {
+      const cleaned = blk.replace(/^[A-I]\.?\s+/, '');
+      PASSAGE_DATA.paragraphs[idx].text = injectEvidenceSpans(cleaned);
+    }
+  });
+
+  try {
+    localStorage.setItem(
+      'ms_le_hang_incorrect_terminology_verbatim',
+      JSON.stringify(PASSAGE_DATA.paragraphs.map(p => p.text))
+    );
+  } catch (e) {}
+
+  renderLeftPane();
+  closeImportModal();
+  alert('Đã cập nhật 100% văn bản gốc và tự động gắn liên kết Định vị dẫn chứng cho Q27–Q40!');
+}
+
+function exportStandaloneHTML() {
+  applyVerbatimText();
+  const docClone = document.documentElement.cloneNode(true);
+  const scripts = docClone.querySelectorAll('script');
+  const mainScript = scripts[scripts.length - 1];
+  mainScript.textContent = mainScript.textContent.replace(
+    /let PASSAGE_DATA = \{[\s\S]*?\n\};/,
+    `let PASSAGE_DATA = ${JSON.stringify(PASSAGE_DATA, null, 2)};`
+  );
+  const htmlContent = '<!DOCTYPE html>\n' + docClone.outerHTML;
+  const blob = new Blob([htmlContent], { type: 'text/html;charset=utf-8' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'Ms_Le_Hang_Incorrect_Terminology_In_Science.html';
+  a.click();
+}
+
+function renderLeftPane() {
+  const leftPane = document.getElementById('left-pane');
+
+  let html = `
+    <div class="passage-header">
+      <h2>${PASSAGE_DATA.title}</h2>
+      <p style="font-size:0.84rem; color:#636e72; margin-top:4px;">
+        💡 Bôi đen từ bất kỳ để Highlight màu tím • Nhấn "Mở dịch đoạn này 🌟" để đối chiếu song ngữ
+      </p>
+    </div>
+  `;
+
+  PASSAGE_DATA.paragraphs.forEach((para, idx) => {
+    html += `
+      <div class="para-card" id="para-${idx}">
+        <div class="para-text">
+          <span class="para-label">${para.label}</span>
+          ${para.text}
+        </div>
+        <button class="translate-btn" onclick="toggleTrans(${idx})">Mở dịch đoạn này 🌟</button>
+        <div class="para-trans" id="trans-${idx}">
+          <strong>🇻🇳 Bản dịch chi tiết:</strong><br>${para.trans}
+        </div>
+      </div>
+    `;
+  });
+
+  html += `
+    <div class="glossary-box">
+      <h3>📚 BẢNG 50 TỪ VỰNG HỌC THUẬT (B2–C2) & SYNONYMS TRONG BÀI</h3>
+      <table class="glossary-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Từ vựng (Academic Word)</th>
+            <th>Loại từ</th>
+            <th>Nghĩa tiếng Việt ~ Từ đồng nghĩa (Synonyms)</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${PASSAGE_DATA.glossary.map((item, i) => `
+            <tr>
+              <td><strong>${i + 1}</strong></td>
+              <td><strong>${item[0]}</strong></td>
+              <td><span class="tag-grammar">${item[1]}</span></td>
+              <td>${item[2]}</td>
+            </tr>
+          `).join('')}
+        </tbody>
+      </table>
+    </div>
+  `;
+
+  leftPane.innerHTML = html;
+}
+
+function toggleTrans(idx) {
+  const el = document.getElementById(`trans-${idx}`);
+  if (!el) return;
+  el.style.display = el.style.display === 'block' ? 'none' : 'block';
+}
+
+function renderRightPane() {
+  const rightPane = document.getElementById('right-pane');
+  let html = '';
+
+  QUESTIONS.forEach((q) => {
+    if (q.sectionTitle) {
+      html += `<div class="section-instruction">📌 ${q.sectionTitle}</div>`;
+    }
+
+    const saved = userAnswers[q.id];
+    html += `
+      <div class="q-card" id="q-card-${q.id}">
+        <div class="q-header">
+          <span class="q-num">${q.id}</span>
+          <div class="q-prompt">${q.prompt}</div>
+        </div>
+        ${renderQuestionInput(q, saved)}
+        ${renderExplanationBox(q, saved)}
+      </div>
+    `;
+  });
+
+  rightPane.innerHTML = html;
+}
+
+function renderQuestionInput(q, saved) {
+  const locked = isTimeUp ? 'disabled' : '';
+
+  if (q.type === "mcq") {
+    const opts = shuffledMcqCache[q.id];
+    const displayLabels = ["A", "B", "C", "D"];
+    return `
+      <div class="mcq-grid">
+        ${opts.map((opt, idx) => {
+          const dispLetter = displayLabels[idx];
+          let stateClass = '';
+          if (saved) {
+            if (opt.letter === q.answer) stateClass = 'correct';
+            else if (saved.value === opt.letter) stateClass = 'wrong';
+          }
+          return `
+            <button class="mcq-btn ${stateClass}" ${locked} onclick="handleMcq(${q.id}, '${opt.letter}')">
+              <div class="mcq-left">
+                <span class="mcq-letter">${dispLetter}</span>
+                <span>${opt.text} <small style="color:#636e72;">(Gốc ${opt.letter})</small></span>
+              </div>
+              <span class="badge-correct-ans">✓ ĐÁP ÁN ĐÚNG</span>
+            </button>
+          `;
+        }).join('')}
+      </div>
+    `;
+  }
+
+  if (q.type === "tfng") {
+    let stateClass = '';
+    if (saved) stateClass = saved.isCorrect ? 'correct' : 'wrong';
+    return `
+      <div class="control-row">
+        <select class="select-3d ${stateClass}" ${locked} onchange="handleSelect(${q.id}, this.value)">
+          <option value="">-- Chọn YES / NO / NOT GIVEN --</option>
+          ${q.options.map(opt => {
+            const selected = saved && saved.value.toLowerCase() === opt.toLowerCase() ? 'selected' : '';
+            return `<option value="${opt}" ${selected}>${opt}</option>`;
+          }).join('')}
+        </select>
+        ${saved ? (saved.isCorrect
+          ? `<span class="tag-true" style="font-size:0.85rem; padding:6px 12px;">✓ ĐÁP ÁN ĐÚNG (${q.answer})</span>`
+          : `<span class="tag-false" style="font-size:0.85rem; padding:6px 12px;">✗ SAI — Đáp án đúng: ${q.answer}</span>`) : ''}
+      </div>
+    `;
+  }
+
+  if (q.type === "gap") {
+    let stateClass = '';
+    if (saved) stateClass = saved.isCorrect ? 'correct' : 'wrong';
+    const val = saved ? saved.value : '';
+    return `
+      <div class="control-row">
+        <input type="text" id="gap-in-${q.id}" class="gap-input ${stateClass}" value="${val}" placeholder="Nhập tối đa 2 từ..." ${locked} onkeydown="if(event.key==='Enter') handleGap(${q.id})" />
+        <button class="btn-3d btn-primary" ${locked} onclick="handleGap(${q.id})">✔️ Check</button>
+        ${saved ? (saved.isCorrect
+          ? `<span class="tag-true" style="font-size:0.85rem; padding:6px 12px;">✓ ĐÁP ÁN ĐÚNG: ${q.answer}</span>`
+          : `<span class="tag-false" style="font-size:0.85rem; padding:6px 12px;">✗ Đáp án chuẩn: ${q.answer}</span>`) : ''}
+      </div>
+    `;
+  }
+  return '';
+}
+
+function renderExplanationBox(q, saved) {
+  const showStyle = saved ? 'style="display:block;"' : '';
+  return `
+    <div class="exp-container" id="exp-${q.id}" ${showStyle}>
+      <div class="exp-heading">⚡ GIẢI THÍCH CHI TIẾT (ĐÁP ÁN CHUẨN: ${q.answer})</div>
+      <div class="exp-step1">
+        💬 <strong>Bước 1 - Dịch nghĩa toàn câu:</strong> "${q.step1}"
+      </div>
+      <div class="exp-step2-title">Bước 2 - Phân tích từ vựng & dịch nghĩa các phương án:</div>
+      <div class="exp-grid">
+        ${q.step2.map(item => `
+          <div class="exp-opt-box">
+            <span class="opt-origin">${item.label}:</span>
+            <span class="${item.ok ? 'tag-true' : 'tag-false'}">${item.ok ? 'Đáp án đúng' : 'Phương án nhiễu'}</span>
+            ${item.text}
+          </div>
+        `).join('')}
+      </div>
+      <div class="exp-step3">
+        <strong>Bước 3 - ✅ TẠI SAO ĐÚNG?</strong>
+        <span class="tag-grammar">Dẫn chứng: ${q.para}</span>
+        ${q.step3}
+        <div>
+          <button class="locate-btn" onclick="locateEvidence('${q.evidenceId}')">
+            🖱️ Định vị dẫn chứng trong bài đọc (${q.para})
+          </button>
+        </div>
+      </div>
+      <div class="exp-step4">
+        <strong>Bước 4 - ❌ TẠI SAO CÁC ĐÁP ÁN CÒN LẠI SAI?</strong> ${q.step4}
+      </div>
+    </div>
+  `;
+}
+
+function handleMcq(qId, chosenLetter) {
+  if (isTimeUp) return;
+  const q = QUESTIONS.find(item => item.id === qId);
+  const isCorrect = chosenLetter.toLowerCase() === q.answer.toLowerCase();
+  userAnswers[qId] = { value: chosenLetter, isCorrect };
+  playSound(isCorrect);
+  if (isCorrect) fireConfetti();
+  renderRightPane();
+  updateProgress();
+}
+
+function handleSelect(qId, chosenVal) {
+  if (isTimeUp || !chosenVal) return;
+  const q = QUESTIONS.find(item => item.id === qId);
+  const isCorrect = chosenVal.toLowerCase() === q.answer.toLowerCase();
+  userAnswers[qId] = { value: chosenVal, isCorrect };
+  playSound(isCorrect);
+  if (isCorrect) fireConfetti();
+  renderRightPane();
+  updateProgress();
+}
+
+function handleGap(qId) {
+  if (isTimeUp) return;
+  const inputEl = document.getElementById(`gap-in-${qId}`);
+  if (!inputEl) return;
+  const rawVal = inputEl.value.trim();
+  if (!rawVal) return;
+  const q = QUESTIONS.find(item => item.id === qId);
+  const cleanUser = rawVal.toLowerCase().replace(/\s+/g, ' ');
+  const isCorrect =
+    cleanUser === q.answer.toLowerCase() ||
+    (qId === 37 && cleanUser === "terminology") ||
+    (qId === 40 && cleanUser === "relativity");
+  userAnswers[qId] = { value: rawVal, isCorrect };
+  playSound(isCorrect);
+  if (isCorrect) fireConfetti();
+  renderRightPane();
+  updateProgress();
+}
+
+function locateEvidence(evId) {
+  document.querySelectorAll('.evidence-active').forEach(el => el.classList.remove('evidence-active'));
+  const target = document.getElementById(evId);
+  if (target) {
+    target.classList.add('evidence-active');
+    target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+}
+
+function updateProgress() {
+  const totalQ = QUESTIONS.length;
+  const answeredCount = Object.keys(userAnswers).length;
+  const pct = Math.round((answeredCount / totalQ) * 100);
+  document.getElementById('progress-fill').style.width = `${pct}%`;
+  document.getElementById('progress-label').textContent = `Đã làm: ${answeredCount}/${totalQ} (${pct}%)`;
+}
+
+document.addEventListener('mouseup', () => {
+  const sel = window.getSelection();
+  if (!sel || sel.isCollapsed) return;
+  const text = sel.toString().trim();
+  if (text.length < 2 || text.length > 180) return;
+  try {
+    const range = sel.getRangeAt(0);
+    const parent = range.commonAncestorContainer.parentElement;
+    if (!parent || (!parent.closest('.para-text') && !parent.closest('.q-prompt'))) return;
+    const span = document.createElement('span');
+    span.className = 'user-highlight';
+    span.onclick = function(e) {
+      e.stopPropagation();
+      this.replaceWith(document.createTextNode(this.textContent));
+    };
+    range.surroundContents(span);
+    sel.removeAllRanges();
+  } catch (err) {}
+});
+
+let remainingSeconds = 20 * 60;
+let timerInterval = null;
+let isTimerRunning = false;
+let isTimeUp = false;
+
+function updateTimerUI() {
+  const mins = String(Math.floor(remainingSeconds / 60)).padStart(2, '0');
+  const secs = String(remainingSeconds % 60).padStart(2, '0');
+  document.getElementById('timer-display').textContent = `${mins}:${secs}`;
+}
+
+function toggleTimer() {
+  const btn = document.getElementById('btn-start-timer');
+  if (isTimeUp) return;
+  if (!isTimerRunning) {
+    isTimerRunning = true;
+    btn.textContent = '⏸️ TẠM DỪNG';
+    timerInterval = setInterval(() => {
+      if (remainingSeconds > 0) {
+        remainingSeconds--;
+        updateTimerUI();
+      } else {
+        clearInterval(timerInterval);
+        isTimerRunning = false;
+        isTimeUp = true;
+        btn.textContent = '⌛ ĐÃ HẾT GIỜ';
+        alert('Đã hết giờ làm bài, vui lòng nộp bài nhé!');
+        renderRightPane();
+      }
+    }, 1000);
+  } else {
+    clearInterval(timerInterval);
+    isTimerRunning = false;
+    btn.textContent = '▶️ TIẾP TỤC';
+  }
+}
+
+function resetTimer() {
+  clearInterval(timerInterval);
+  isTimerRunning = false;
+  isTimeUp = false;
+  remainingSeconds = 20 * 60;
+  updateTimerUI();
+  document.getElementById('btn-start-timer').textContent = '⏱️ BẮT ĐẦU TÍNH GIỜ LÀM BÀI';
+  renderRightPane();
+}
+
+function calculateBandScore(scaledOutOf40) {
+  if (scaledOutOf40 >= 39) return 9.0;
+  if (scaledOutOf40 >= 37) return 8.5;
+  if (scaledOutOf40 >= 35) return 8.0;
+  if (scaledOutOf40 >= 33) return 7.5;
+  if (scaledOutOf40 >= 30) return 7.0;
+  if (scaledOutOf40 >= 27) return 6.5;
+  if (scaledOutOf40 >= 23) return 6.0;
+  if (scaledOutOf40 >= 20) return 5.5;
+  if (scaledOutOf40 >= 16) return 5.0;
+  if (scaledOutOf40 >= 13) return 4.5;
+  if (scaledOutOf40 >= 10) return 4.0;
+  if (scaledOutOf40 >= 7) return 3.5;
+  if (scaledOutOf40 >= 5) return 3.0;
+  if (scaledOutOf40 >= 3) return 2.5;
+  return 2.0;
+}
+
+function submitExam() {
+  let correctCount = 0;
+  const totalQ = QUESTIONS.length; // 14 questions (Q27-40)
+  QUESTIONS.forEach(q => {
+    if (userAnswers[q.id] && userAnswers[q.id].isCorrect) {
+      correctCount++;
+    } else if (!userAnswers[q.id]) {
+      userAnswers[q.id] = { value: "", isCorrect: false };
+    }
+  });
+  renderRightPane();
+  updateProgress();
+
+  const pct = Math.round((correctCount / totalQ) * 100);
+  const scaled40 = Math.round((correctCount / totalQ) * 40);
+  const band = calculateBandScore(scaled40);
+
+  let feedback = "";
+  if (pct < 60) {
+    feedback = "💬 Lời nhắn từ Ms Lê Hằng: “Điểm lần này chưa cao lắm, con cố gắng đọc kỹ giải thích đáp án và làm lại nha. Cô tin con sẽ làm tốt hơn ở lần sau!”";
+  } else if (pct < 90) {
+    feedback = "💬 Lời nhắn từ Ms Lê Hằng: “Con đã có tiến bộ khá ổn rồi, con cố gắng đọc kỹ giải thích đáp án và làm lại nha. Cô tin con sẽ làm tốt hơn ở lần sau!”";
+  } else {
+    feedback = "💬 Lời nhắn từ Ms Lê Hằng: “Làm tốt lắm, con cố gắng ring điểm 10 ở lần sau nha!”";
+    fireConfetti();
+  }
+
+  document.getElementById('modal-band').textContent = band.toFixed(1);
+  document.getElementById('modal-score-line').textContent = `Số câu đúng: ${correctCount} / ${totalQ} câu (${pct}%)`;
+  document.getElementById('modal-scaled-line').textContent = `(Tương đương ${scaled40}/40 câu trên thang quy đổi IELTS Academic Reading chuẩn)`;
+  document.getElementById('modal-feedback').textContent = feedback;
+  document.getElementById('score-modal').style.display = 'flex';
+}
+
+function closeModal() {
+  document.getElementById('score-modal').style.display = 'none';
+}
+
+renderLeftPane();
+renderRightPane();
+</script>
+</body>
+</html>
